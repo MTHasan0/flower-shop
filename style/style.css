@@ -17,7 +17,7 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    
+
     /* 166.667% */
 }
 
@@ -41,9 +41,8 @@ button:hover {
 
 .section-heading {
     color: #272727;
-
     text-align: center;
-    font-family: Lato;
+    font-family: 'lato', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
@@ -87,10 +86,13 @@ button:hover {
 
 }
 
+
+
 /* main section */
 
 
-.section-heading h2, p2{
+.section-heading h2,
+p2 {
     margin-top: 178px;
 }
 
@@ -112,6 +114,7 @@ button:hover {
     align-items: end;
 
 }
+
 .image-bg2 {
     background: rgba(5, 151, 160, 0.15);
     border-radius: 300px 300px 0px 0px;
@@ -120,6 +123,7 @@ button:hover {
     align-items: end;
 
 }
+
 .image-bg3 {
     background: rgba(71, 125, 17, 0.15);
     border-radius: 300px 300px 0px 0px;
@@ -129,16 +133,84 @@ button:hover {
 
 }
 
-.image-bg img{
+.image-bg img {
     width: 100%;
-    
+
 }
 
-.main-image-container p{
+
+
+.main-image-container p {
     text-align: center;
 }
 
+.feature-footer-section {
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(5, 151, 160, 0.15);
+    margin-top: 128px;
 
+}
+
+.feature-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 128px;
+    height: 320px;
+
+
+}
+
+.feature-footer>div {
+    margin: auto;
+}
+
+.hot-deal {
+
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+    margin-top: 128px;
+
+}
+
+.hot-deal-container {
+    width: 57%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+
+
+
+}
+
+.left-item {
+    text-align: center;
+
+}
+
+.left-item>h2 {
+
+    color: #272727;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.left-item>p{
+    max-width: 594px;
+    margin-bottom: 35px;
+}
+
+.right-item img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 
 
@@ -157,5 +229,43 @@ button:hover {
         flex-direction: column-reverse;
 
     }
+
+    .main-image-container {
+        flex-direction: column;
+    }
+
+    .feature-footer {
+        flex-direction: column;
+        height: 600px;
+    }
+    .hot-deal-container{
+        flex-direction: column;
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .header-container {
+        flex-wrap: wrap;
+
+    }
+
+    .main-image-container {
+        flex-wrap: wrap;
+    }
+
+    .feature-footer {
+        flex-wrap: wrap;
+
+    }
+    .hot-deal-container{
+        flex-direction: column;
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+
 
 }
