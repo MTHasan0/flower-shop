@@ -212,8 +212,39 @@ p2 {
     padding-bottom: 100px;
 }
 
+.deal-btn{
+    transition: transform 1s;
+}
 
+.deal-btn:hover{
+    transform: rotate(10deg);
+    border-radius: 20%;
+}
 
+/* Instagram section styles */
+
+.instagram-section{
+    margin-top: 128px;
+}
+
+.instagram-section>div>p{
+    max-width: 594px;
+    text-align: center;
+    margin: 24px auto 48px auto;
+
+}
+
+.instagram-img-container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    gap: 24px;
+}
+
+.instagram-img-container img{
+    width: 100%;
+    margin: auto;
+}
 
 
 
