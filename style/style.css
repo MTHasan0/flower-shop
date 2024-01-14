@@ -172,11 +172,11 @@ p2 {
     border-radius: 8px;
     background: rgba(229, 84, 115, 0.05);
     margin-top: 128px;
-
+    width: 100%;
 }
 
 .hot-deal-container {
-    width: 57%;
+    max-width: 57%;
     display: flex;
     align-items: center;
     margin: auto;
@@ -236,7 +236,8 @@ p2 {
 
 .instagram-img-container {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin: auto;
     gap: 24px;
 }
@@ -322,7 +323,9 @@ p2 {
     }
 
     .instagram-img-container {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-wrap: wrap;
 
     }
 
@@ -375,7 +378,10 @@ p2 {
     } */
 
     .instagram-img-container {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+
     }
     .instagram-img-container div {
         margin-bottom: 10px;
